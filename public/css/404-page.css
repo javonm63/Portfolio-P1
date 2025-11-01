@@ -1,0 +1,10 @@
+#display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: orange;
+}
+#error-page-text{
+    text-align: center;
+    font-size: 40px;
+}

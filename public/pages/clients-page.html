@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/clients-page.css">
+        <title>FreelancerInnvoice.com</title>
+    </head>
+    <body>
+        <!-- SEARCHBAR -->
+        <aside id="search-main-container">
+            <header id="searchbar-container">
+                <h3 id="web-logo">FL Innvoice.com</h3>
+                <img id="web-search-icon" class="web-icons" src="/resources/search-icon.png" alt="search-icon-image">
+                <input id="search-input" type="text" placeholder="Search">
+                <img id="web-notif-icon" class="web-icons" src="/resources/notifcation-icon.png" alt="image-of-notification-icon">
+                <h3 id="phone-logo">FLI.com</h3>
+                <nav id="icon-container">
+                    <img id="search-icon" class="nav-icons" src="/resources/search-icon.png" alt="search-icon-image">
+                    <img id="notification-icon" class="nav-icons" src="/resources/notifcation-icon.png" alt="image-of-notifcation-icon">
+                    <img id="dropdown-menu-icon" class="nav-icons" src="/resources/menu-icon.png" alt="image-of-menu-icon">
+                </nav>
+            </header>
+        </aside>
+        <!-- MOBILE NAVBAR -->
+        <nav id="mobile-navbar"> 
+                <ol id="dropdown-menu-opts-cont">
+                    <button id="side-nav-exit-btn">X</button>
+                    <li id="side-nav-logo"><h3 id="side-nav-logo">FL Innvoice.com</h3></li>
+                    <li class="phone-menu-items"><a href="dashboard">DashBoard</a><br></li>
+                    <li class="phone-menu-items"><a href="invoices">Invoices</a><br></li>
+                    <li class="phone-menu-items"><a href="clients">Clients</a></li>
+                    <li class="phone-menu-items"><a href="reports">Reports</a><br></li>
+                    <li id="mobile-settings-btn" class="phone-menu-items"><a>Settings</a><br></li>
+                    <li class="phone-menu-items"><a>Logout</a></li>
+                </ol>
+            </nav>
+        <!-- PAGE TITLE  -->
+        <h1 id="main-title">CLIENTS</h1>
+        <!-- DESKTOP NAVBAR -->
+        <nav id="web-navbar">
+            <ol id="menu-options-cont">
+                <li class="web-menu-items"><a href="dashboard">DashBoard</a><br></li>
+                <li class="web-menu-items"><a href="invoices">Invoices</a><br></li>
+                <li class="web-menu-items"><a href="clients">Clients</a></li>
+                <li class="web-menu-items"><a href="reports">Reports</a><br></li>
+                <li id="web-setting-btn" class="web-menu-items"><a href="#">Settings</a><br></li>
+            </ol>
+        </nav>
+        <!-- NOTIFACTION PAGE  -->
+        <article id="notif-page-container">
+            <button id="exit-notif-page-btn">X</button>
+            <h3 id="side-nav-logo">NOTIFICATIONS</h3>
+            <ol id="notifs-container">
+                <li class="notifs">
+                    <p class="notifs-text">This is a notification</p>
+                    <p class="notifs-date">-1 hr ago.</p>
+                </li>
+                <li class="notifs">
+                    <p class="notifs-text">This is also a notification</p>
+                    <p class="notifs-date">-30 mins ago.</p>
+                </li>
+            </ol>
+        </article>
+        <!-- SETTING PAGE -->
+        <article id="settings-page-main-cont">
+            <button id="exit-setting-btn">X</button>
+            <h2 id="settings-title">SETTINGS</h2>
+            <main id="settings-page-cont">
+                <!-- PROFILE INFO AND EDIT SECTION PLUS BUTTON -->
+                <section id="settings-profile-container">
+                    <h3 class="settings-page-sub-titles">Profile Info</h3>
+                    <p class="settings-profile-items">Client James</p>
+                    <p class="settings-profile-items">CLjames123@email.com</p>
+                    <p class="settings-profile-items">**********</p>
+                </section>
+                <button class="settings-page-btns">Edit Profile</button>
+                <!-- COMPANY INFO ANDM EDIT BUTTON SECTION -->
+                <div id="company-title-cont">
+                    <h3 class="settings-page-sub-titles">Company Info</h3>
+                </div>
+                <section id="company-info-main-cont">
+                    <!-- COMPANY LOGO -->
+                    <aside id="left-container">
+                        <p id="company-logo-default">LOGO</p>
+                    </aside>
+                    <!-- COMPANY INFO -->
+                    <aside id="right-container">
+                        <section class="company-info-containers">
+                            <p class="company-info-titles">Address</p>
+                            <address class="company-info-texts">123 hello st., brooklyn, NY, 00001</address>
+                        </section>
+                        <section class="company-info-containers">
+                            <p class="company-info-titles">Payment Details</p>
+                            <p class="company-info-texts">************1234</p>
+                        </section>
+                    </aside>
+                </section>
+                <button class="settings-page-btns">Edit Company</button>
+                <!-- INVOICE SETTING SECTION -->
+                <h3 class="settings-page-sub-titles">Invoice Settings</h3>
+                <section id="inv-settings-main-cont">
+                    <label class="currency-dropdown-labels" for="currency-dropdown">Default Currency:</label>
+                    <select id="currency-dropdown" class="inv-settings-conts">
+                        <option class="inv-sett-dropdown1-items">USD</option>
+                        <option class="inv-sett-dropdown1-items">EURO</option>
+                        <option class="inv-sett-dropdown1-items">CAD</option>
+                        <option class="inv-sett-dropdown1-items">GBP</option>
+                        <option class="inv-sett-dropdown1-items">CNY</option>
+                    </select>
+                    <label id="currency-dropdown2-label" class="currency-dropdown-labels" for="currency-dropdown2">Tax Rate:</label>
+                    <select id="currency-dropdown2" class="inv-settings-conts">
+                        <option class="inv sett-dropdown2-items">3%</option>
+                        <option class="inv sett-dropdown2-items">5%</option>
+                        <option class="inv sett-dropdown2-items">8%</option>
+                        <option class="inv sett-dropdown2-items">10%</option>
+                        <option class="inv sett-dropdown2-items">12%</option>
+                        <option class="inv sett-dropdown2-items">15%</option>
+                        <option class="inv sett-dropdown2-items">18%</option>
+                        <option class="inv sett-dropdown2-items">20%</option>
+                        <option class="inv sett-dropdown2-items">custom</option>
+                    </select>
+                </section>
+            </main>
+        </article>
+        <!-- MAIN CONTENT -->
+        <main id="main-page-container">
+            <!-- ADD CLIENT PAGE -->
+            <form id="add-client-page">
+                <button id="exit-cl-add-pg-btn" type="button">X</button>
+                <h3 class="popup-title">ADD NEW CLIENT</h3>
+                <p class="new-client-subtitles">Enter Client Name:</p>
+                <input id="client-name-input" class="new-client-inputs" type="text" required>
+                <p class="new-client-subtitles">Enter Client Email:</p>
+                <input id="client-email-input" class="new-client-inputs" type="email" required>
+                <p class="new-client-subtitles">Enter Client Phone:</p>
+                <input id="client-phone-input" class="new-client-inputs" type="number" required>
+                <p id="new-clientID-info">A client ID is a unique identifier for each client, one will be automatically generated for every new client added.</p>
+                <button id="save-client-btn" class="save-btns" type="submit">ADD CLIENT</button>
+            </form>
+            <!-- EDIT CLIENTS PAGE -->
+            <form id="edit-client-page">
+                <button id="exit-cl-edit-pg-btn" type="submit">X</button>
+                <h3 class="popup-title">EDIT CLIENT INFO</h3>
+                <p class="send-invoices-page-info">The edit client info page is where you can edit client's information or delete an client entirely by clicking on the client's name.</p>
+                <ul id="edit-container">
+                <li id="edit-titles">
+                    <p class="edit-options">NAME</p>
+                    <p class="edit-options">ID #</p>
+                </li>
+        <!-- status-items will be populated through javascript -->
+            </ul>
+            </form>
+            <!-- ADD EDIT INFO PAGE -->
+             <form id="edited-info-page-cont">
+                <button id="exit-edited-pg-btn" type="button">X</button>
+                <h3 class="popup-title">EDIT CLIENT INFO</h3>
+                <p class="new-client-subtitles">Enter New Name:</p>
+                <input id="edit-name-input" class="new-client-inputs">
+                <p class="new-client-subtitles">Enter New Email:</p>
+                <input id="edit-email-input" class="new-client-inputs">
+                <p class="new-client-subtitles">Enter New Phone:</p>
+                <input id="edit-phone-input" class="new-client-inputs">
+                <button id="save-edit-btn" class="save-btns" type="button">UPDATED INFO</button>
+                <button id="delete-edit-btn" class="save-btns">DELETE CLIENT</button>
+             </form>
+            <!-- CLIENT STATUS SECTION -->
+            <h3 class="client-page-sub-titles">CLIENT STATUS</h3>
+            <aside id="client-status-main-container">
+                <table id="client-stat-cont-1">
+                    <tbody id="table-sub-cont">
+                        <tr>
+                            <th class="client-stat-titles">NAME</th>
+                            <th class="client-stat-titles">EMAIL</th>
+                            <th class="client-stat-titles">BAL.</th>
+                        </tr>
+                        <!-- clients list is populated with javascript -->
+                    </tbody>
+                </table>
+            </aside>
+            <button id="add-client-btn-2">ADD CLIENT</button>
+            <!-- CLIENT LIST SECTION -->
+            <h3 class="client-page-sub-titles">CLIENTS</h3>
+            <aside id="client-list-main-container">
+                <table id="client-stat-cont-2">
+                    <tbody id="clients-list-sub-cont">
+                        <tr>
+                            <th class="client-titles">NAME</th>
+                            <th class="client-titles">EMAIL</th>
+                            <th class="client-titles">PHONE</th>
+                            <th class="client-titles">ID #</th>
+                        </tr>
+                        <!-- clients info and stats will be populated through javascript -->
+                    </tbody>
+                </table>
+            </aside>
+            <button id="edit-client-btn">EDIT CLIENTS</button>
+
+            <aside id="alert-container">
+                <h3 id="alert-title">ALERT</h3>
+                <p id="alert-text">This is a test alert message.</p>
+            </aside>
+        </main>
+
+        <script src="../css/clients-page.js"></script>
+    </body>
+</html>

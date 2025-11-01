@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/landing-page2.css">
+        <title>FreelancerInnvoice.com</title>
+        <script src="/chart.js"></script>
+    </head>
+    <body>
+        <!-- SEARCHBAR -->
+        <section id="search-main-container">
+            <header id="searchbar-container">
+                <h2 id="web-logo">FL Innvoice.com</h2>
+                <h2 id="phone-logo">FLI.com</h2>
+                <nav id="icon-container">
+                    <img id="dropdown-menu-icon" class="nav-icons" src="../resources/menu-icon.png" alt="image-of-menu-icon">
+                </nav>
+            </header>
+        </section>
+        <!-- MOBILE NAVBAR -->
+        <nav id="mobile-navbar"> 
+                <ol id="dropdown-menu-opts-cont">
+                    <button id="side-nav-exit-btn">X</button>
+                    <li id="side-nav-logo"><h3 id="side-nav-logo">FL Innvoice.com</h3></li>
+                    <li class="phone-menu-items"><a href="/">Freelancers</a><br></li>
+                    <li class="phone-menu-items"><a href="cl">Clients</a><br></li>
+                    <li id="mobile-login-button" class="phone-menu-items"><button id="login-page-btn" class="phone-menu-items">Login</button></li>
+                </ol>
+            </nav>
+        <!-- PAGE TITLE  -->
+        <h1 id="main-title">CLIENTS</h1>
+        <!-- DESKTOP NAVBAR -->
+        <nav id="web-navbar">
+            <ol id="menu-options-cont">
+                <li class="web-menu-items"><a href="/">Freelancers</a><br></li>
+                <li class="web-menu-items"><a href="cl">Clients</a><br></li>
+                <li id="web-login-button" class="web-menu-items"><button id="web-login-page-btn" class="web-menu-items">Login</button></li>
+            </ol>
+        </nav>
+        <!-- MAIN WINDOW -->
+        <article id="main-window-container">
+            <section id="title-signup-container">
+                <h3 class="landing-page-titles">Invoice and manage payments.</h3>
+                <p class="landing-page-hook-text">The simple way to recieve, pay and organize invoices.</p>
+                <button id="freelancer-signup-btn1" class="signup-btns">Get Started</button>
+            </section>
+            <article id="features-container">
+                <section id="features-icons-container">
+                    <img class="landing-page-icons" src="../resources/cloud-icon.png" alt="image of a cloud icon">
+                    <img class="landing-page-icons" src="../resources/payments-icon.webp" alt="image of a credit card icon">
+                    <img class="landing-page-icons" src="../resources/saved-icon.webp" alt="image of a bookmark icon">
+                    <img class="landing-page-icons" src="../resources/folder-icon.webp" alt="image of a folder icon">
+                </section>
+                <section id="features-titles-and-descrips-cont">
+                    <label for="create-inv-icon" class="features-titles"><strong>Recieve invoices</strong></label>
+                    <p class="features-descriptions"><em>Recieve electronic invoices from freelancers via email or directly through the freelancerInnvoice.com website.</em></p>
+                    <label for="create-inv-icon"><strong class="features-titles">Pay invoices</strong></label>
+                    <p class="features-descriptions"><em>You can pay an invoice once its recieved either from you freelancerInnvoice.com account or in person.</em></p>
+                    <label for="create-inv-icon"><strong class="features-titles">Save invoices</strong></label>
+                    <p class="features-descriptions"><em>Invoices can also be saved to, or deleted from your account making managing invoices way more organized.</em></p>
+                    <label for="create-inv-icon"><strong class="features-titles">Manage Freelancers</strong></label>
+                    <p class="features-descriptions"><em>The previous freelancers page is where all the freelancers that have sent you invoices will be stored.</em></p>
+                </section>
+            </article>
+            <section id="reports-section-container">
+                <h4 class="landing-page-titles">View your invoice stats</h4>
+                <div id="bar-graph-container">
+                    <canvas id="bar-graph"></canvas>
+                </div>
+                <p class="landing-page-hook-text">You can view insights about your invoices, payments and merchants<br>such as paid vs. unpaid invoices, recently paid invoices, outstanding balances etc.<br>Create an account to start centralizing your invoice management tasks today</p>
+                <h4 id="get-started-title" class="landing-page-titles">Get started for free</h4>
+                <button id="freelancer-signup-btn2" class="signup-btns">Sign Up</button>
+            </section>
+
+            <form id="signup-popup-page">
+                <button id="exit-signup-popup" type="button">X</button>
+                <h4 class="landing-page-titles">Create an account</h4>
+                <label for="signup-name-input" class="signup-titles">ENTER NAME:</label>
+                <input id="signup-name-input" class="signup-inputs" type="text">
+                <label for="signup-email-input" class="signup-titles">ENTER EMAIL:</label>
+                <input id="signup-email-input" class="signup-inputs" type="text">
+                <label for="signup-phone-input" class="signup-titles">ENTER PHONE:</label>
+                <input id="signup-phone-input" class="signup-inputs" type="text">
+                <label for="signup-pw-input" class="signup-titles">CREATE PASSWORD:</label>
+                <input id="signup-pw-input" class="signup-inputs" type="text">
+                <label for="signup-con-pw-input" class="signup-titles">CONFIRM PASSWORD:</label>
+                <input id="signup-con-pw-input" class="signup-inputs" type="text">
+                <p id="signup-disclosure">By clicking the create account button you automatically accept out terms and agreements. Also we pride ourselves on user privacy, FLI.com will never sell, use or tamper with users information.</p>
+                <button id="create-account-btn">Create Account</button>
+            </form>
+            <form id="login-popup-page">
+                <button id="exit-login-popup" type="button">X</button>
+                <h4 class="landing-page-titles">Log in</h4>
+                <label for="login-email-input" class="signup-titles">ENTER EMAIL:</label>
+                <input id="login-email-input" class="signup-inputs" type="email" required>
+                <label for="login-pw-input" class="signup-titles">ENTER PASSWORD:</label>
+                <input id="login-pw-input" class="signup-inputs" type="text" minlength="8" required>
+                <button id="login-btn" type="button">Login</button>
+            </form>
+
+            <aside id="alert-container">
+                <h3 id="alert-title">ALERT</h3>
+                <p id="alert-text">This is a test alert message.</p>
+            </aside>
+        </article>
+        <script src="../css/landing-page2.js"></script>
+    </body>
+</html>

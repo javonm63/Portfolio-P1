@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/client-reports-page.css">
+        <title>FreelancerInnvoice.com</title>
+        <script src="/chart.js"></script>
+    </head>
+    <body>
+<!-- SEARCHBAR -->
+        <aside id="search-main-container">
+            <header id="searchbar-container">
+                <h3 id="web-logo">FL Innvoice.com</h3>
+                <img id="web-search-icon" class="web-icons" src="/resources/search-icon.png" alt="search-icon-image">
+                <input id="search-input" type="text" placeholder="Search">
+                <img id="web-notif-icon" class="web-icons" src="/resources/notifcation-icon.png" alt="image-of-notification-icon">
+                <h3 id="phone-logo">FLI.com</h3>
+                <nav id="icon-container">
+                    <img id="search-icon" class="nav-icons" src="/resources/search-icon.png" alt="search-icon-image">
+                    <img id="notification-icon" class="nav-icons" src="/resources/notifcation-icon.png" alt="image-of-notifcation-icon">
+                    <img id="dropdown-menu-icon" class="nav-icons" src="/resources/menu-icon.png" alt="image-of-menu-icon">
+                </nav>
+            </header>
+        </aside>
+        <!-- MOBILE NAVBAR -->
+        <nav id="mobile-navbar"> 
+                <ol id="dropdown-menu-opts-cont">
+                    <button id="side-nav-exit-btn">X</button>
+                    <li id="side-nav-logo"><h3 id="side-nav-logo">FL Innvoice.com</h3></li>
+                    <li class="phone-menu-items"><a href="dashboard">DashBoard</a><br></li>
+                    <li class="phone-menu-items"><a href="invoices">Invoices</a><br></li>
+                    <li class="phone-menu-items"><a href="reports">Reports</a><br></li>
+                    <li id="mobile-settings-btn" class="phone-menu-items"><a>Settings</a><br></li>
+                    <li class="phone-menu-items"><a>Logout</a></li>
+                </ol>
+            </nav>
+        <!-- PAGE TITLE  -->
+        <h1 id="main-title">REPORTS</h1>
+        <!-- DESKTOP NAVBAR -->
+        <nav id="web-navbar">
+            <ol id="menu-options-cont">
+                <li class="web-menu-items"><a href="dashboard">DashBoard</a><br></li>
+                <li class="web-menu-items"><a href="invoices">Invoices</a><br></li>
+                <li class="web-menu-items"><a href="reports">Reports</a><br></li>
+                <li id="web-setting-btn" class="web-menu-items"><a href="#">Settings</a><br></li>
+            </ol>
+        </nav>
+        <!-- NOTIFACTION PAGE  -->
+        <article id="notif-page-container">
+            <button id="exit-notif-page-btn">X</button>
+            <h3 id="side-nav-logo">NOTIFICATIONS</h3>
+            <ol id="notifs-container">
+                <li class="notifs">
+                    <p class="notifs-text">This is a notification</p>
+                    <p class="notifs-date">-1 hr ago.</p>
+                </li>
+                <li class="notifs">
+                    <p class="notifs-text">This is also a notification</p>
+                    <p class="notifs-date">-30 mins ago.</p>
+                </li>
+            </ol>
+        </article>
+        <!-- SETTING PAGE -->
+        <article id="settings-page-main-cont">
+            <button id="exit-setting-btn">X</button>
+            <h2 id="settings-title">SETTINGS</h2>
+            <main id="settings-page-cont">
+                <!-- PROFILE INFO AND EDIT SECTION PLUS BUTTON -->
+                <section id="settings-profile-container">
+                    <h3 class="settings-page-sub-titles">Profile Info</h3>
+                    <p class="settings-profile-items">Client James</p>
+                    <p class="settings-profile-items">CLjames123@email.com</p>
+                    <p class="settings-profile-items">347-123-4567</p>
+                    <p class="settings-profile-items">**********</p>
+                </section>
+                <button class="settings-page-btns">Edit Profile</button>
+                <!-- COMPANY INFO ANDM EDIT BUTTON SECTION -->
+                <div id="company-title-cont">
+                    <h3 class="settings-page-sub-titles">Payment Info</h3>
+                </div>
+                <section id="company-info-main-cont">
+                    <!-- COMPANY INFO -->
+                    <aside id="right-container">
+                        <section class="company-info-containers">
+                            <p class="company-info-titles">Payment Details</p>
+                            <p class="company-info-texts">************1234</p>
+                        </section>
+                        <section class="company-info-containers">
+                            <p class="company-info-titles">Address</p>
+                            <address class="company-info-texts">123 hello st., brooklyn, NY, 00001</address>
+                        </section>
+                    </aside>
+                </section>
+                <button class="settings-page-btns">Edit Payment</button>
+                <!-- INVOICE SETTING SECTION -->
+                <h3 class="settings-page-sub-titles">Invoice Settings</h3>
+                <section id="inv-settings-main-cont">
+
+                </section>
+            </main>
+        </article>
+            <!-- MAIN CONTENT -->
+        <article id="main-page-container">
+            <aside id="reports-filter-container">
+                <select id="date-filter-dropdown" name="date-range">
+                    <option class="date-filter-drpdwn-opts" value="last-7-d">Last 7 days</option>
+                    <option class="date-filter-drpdwn-opts" value="last-30-d">Last 30 days</option>
+                    <option class="date-filter-drpdwn-opts" value="last-60-d">Last 60 days</option>
+                    <option class="date-filter-drpdwn-opts" value="last-90-d">Last 90 days</option>
+                    <option class="date-filter-drpdwn-opts" value="last-6-m">Last 6 months</option>
+                    <option class="date-filter-drpdwn-opts" value="last-6-m">Last 6 months</option>
+                    <option class="date-filter-drpdwn-opts" value="all-time">All-Time</option>
+                </select>
+                <button id="reports-filter-btn">Filter</button>
+            </aside>
+            <!-- EARNINGS PER MONTH AND PAID VS UNPAID SECTIONS -->
+            <aside id="top-container">
+                <section id="monthly-earnings-cont">
+                    <h3 class="page-sub-titles">Invoices Per Month</h3>
+                    <canvas id="myChart"></canvas>
+                    
+                </section>
+                <section id="paid-unpaid-cont">
+                    <h3 class="page-sub-titles">Paid vs. Unpaid</h3>
+                    <canvas id="myChart2"></canvas>
+
+
+                </section>
+            </aside>
+            <!-- TOTALS SECTION -->
+            <aside id="middle-container">
+                <section class="totals-grid-conts">
+                    <p class="totals-grid-title">Total Spent</p> 
+                    <p class="totals-grid-title">Unpaid Total</p> 
+                    <p class="totals-grid-title">Overdue Total</p> 
+                </section>
+                <section class="totals-grid-conts">
+                    <p class="totals-grid-item">0</p> 
+                    <p class="totals-grid-item">0</p> 
+                    <p class="totals-grid-item">0</p> 
+                </section>
+            </aside>
+        </article>
+
+        <script src="../css/client-reports-page.js"></script>
+        </article>
+    </body>
+</html>

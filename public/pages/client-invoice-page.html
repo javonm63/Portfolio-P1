@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/client-invoice-page.css">
+        <title>FreelancerInnvoice.com</title>
+        <script src="https://js.stripe.com/v3/"></script>
+    </head>
+    <body>
+        <!-- SEARCHBAR -->
+        <aside id="search-main-container">
+            <header id="searchbar-container">
+                <h3 id="web-logo">FL Innvoice.com</h3>
+                <img id="web-search-icon" class="web-icons" src="/resources/search-icon.png" alt="search-icon-image">
+                <input id="search-input" type="text" placeholder="Search">
+                <img id="web-notif-icon" class="web-icons" src="/resources/notifcation-icon.png" alt="image-of-notification-icon">
+                <h3 id="phone-logo">FLI.com</h3>
+                <nav id="icon-container">
+                    <img id="search-icon" class="nav-icons" src="/resources/search-icon.png" alt="search-icon-image">
+                    <img id="notification-icon" class="nav-icons" src="/resources/notifcation-icon.png" alt="image-of-notifcation-icon">
+                    <img id="dropdown-menu-icon" class="nav-icons" src="/resources/menu-icon.png" alt="image-of-menu-icon">
+                </nav>
+            </header>
+        </aside>
+        <!-- MOBILE NAVBAR -->
+        <nav id="mobile-navbar"> 
+                <ol id="dropdown-menu-opts-cont">
+                    <button id="side-nav-exit-btn">X</button>
+                    <li id="side-nav-logo"><h3 id="side-nav-logo">FL Innvoice.com</h3></li>
+                    <li class="phone-menu-items"><a href="dashboard">DashBoard</a><br></li>
+                    <li class="phone-menu-items"><a href="invoices">Invoices</a><br></li>
+                    <li class="phone-menu-items"><a href="reports">Reports</a><br></li>
+                    <li id="mobile-settings-btn" class="phone-menu-items"><a>Settings</a><br></li>
+                    <li class="phone-menu-items"><a>Logout</a></li>
+                </ol>
+            </nav>
+        <!-- PAGE TITLE  -->
+        <h1 id="main-title">INVOICES</h1>
+        <!-- DESKTOP NAVBAR -->
+        <nav id="web-navbar">
+            <ol id="menu-options-cont">
+                <li class="web-menu-items"><a href="dashboard">DashBoard</a><br></li>
+                <li class="web-menu-items"><a href="invoices">Invoices</a><br></li>
+                <li class="web-menu-items"><a href="reports">Reports</a><br></li>
+                <li id="web-setting-btn" class="web-menu-items"><a href="#">Settings</a><br></li>
+            </ol>
+        </nav>
+        <!-- NOTIFACTION PAGE  -->
+        <article id="notif-page-container">
+            <button id="exit-notif-page-btn">X</button>
+            <h3 id="side-nav-logo">NOTIFICATIONS</h3>
+            <ol id="notifs-container">
+                <li class="notifs">
+                    <p class="notifs-text">This is a notification</p>
+                    <p class="notifs-date">-1 hr ago.</p>
+                </li>
+                <li class="notifs">
+                    <p class="notifs-text">This is also a notification</p>
+                    <p class="notifs-date">-30 mins ago.</p>
+                </li>
+            </ol>
+        </article>
+        <!-- SETTING PAGE -->
+        <article id="settings-page-main-cont">
+            <button id="exit-setting-btn">X</button>
+            <h2 id="settings-title">SETTINGS</h2>
+            <main id="settings-page-cont">
+                <!-- PROFILE INFO AND EDIT SECTION PLUS BUTTON -->
+                <section id="settings-profile-container">
+                    <h3 class="settings-page-sub-titles">Profile Info</h3>
+                    <p class="settings-profile-items">Client James</p>
+                    <p class="settings-profile-items">CLjames123@email.com</p>
+                    <p class="settings-profile-items">347-123-4567</p>
+                    <p class="settings-profile-items">**********</p>
+                </section>
+                <button class="settings-page-btns">Edit Profile</button>
+                <!-- COMPANY INFO ANDM EDIT BUTTON SECTION -->
+                <div id="company-title-cont">
+                    <h3 class="settings-page-sub-titles">Payment Info</h3>
+                </div>
+                <section id="company-info-main-cont">
+                    <!-- COMPANY INFO -->
+                    <aside id="right-container">
+                        <section class="company-info-containers">
+                            <p class="company-info-titles">Payment Details</p>
+                            <p class="company-info-texts">************1234</p>
+                        </section>
+                        <section class="company-info-containers">
+                            <p class="company-info-titles">Address</p>
+                            <address class="company-info-texts">123 hello st., brooklyn, NY, 00001</address>
+                        </section>
+                    </aside>
+                </section>
+                <button class="settings-page-btns">Edit Payment</button>
+                <!-- INVOICE SETTING SECTION -->
+                <h3 class="settings-page-sub-titles">Invoice Settings</h3>
+                <section id="inv-settings-main-cont">
+
+                </section>
+            </main>
+        </article>
+        <!-- MAIN CONTENT -->
+        <main id="main-page-container">
+            <!-- MOBILE AND WEB TOP NAVBAR -->
+            <nav id="top-nav-container">
+                <button id="web-send-btn" class="invoice-page-menu-btns">PAY INVOICE</button>
+                <button id="mobile-send-btn" class="invoice-page-menu-btns">PAY</button>
+                <button id="web-all-btn" class="invoice-page-menu-btns">ALL INVOICES</button>
+                <button id="mobile-all-btn" class="invoice-page-menu-btns" type="button">ALL</button>
+            </nav>
+             <!-- PAY INVOICES PAGE -->
+            <div id="send-invs-page-cont">
+                <button id="exit-send-inv-pg" type="button">X</button>
+                <h2 class="page-titles">PAY INVOICES</h2>
+                <p class="send-invoices-page-info">On this page you'll see a list of all the unpaid invoices that have been sent to your account. You can pay an invoice by clicking on the invoice #</p>
+                <ul id="send-invs-container">
+                    <li id="all-invs-titles">
+                        <p class="invs-options">INVOICE</p>
+                        <p class="invs-options">DUE</p>
+                        <p class="invs-options">AMOUNT</p>
+                        <p class="invs-options">SEND</p>
+                    </li>
+            <!-- status-items will be populated through javascript -->
+                </ul>
+            </div>
+            <form id="send-popup-page-cont">
+                <button id="exit-send-popup-btn" type="button">X</button>
+                <h3 class="page-sub-title">PAY INVOICE</h3>
+                <select id="pay-inv-dropdown">
+                    <!-- client list will be populated through javascript -->
+                     <option id="default-option" value="nothing entered" selected>Choose Invoice:</option>
+                </select>
+                <button id="select-inv-btn" class="pay-inv-btns" type="button">select invoice</button>
+                <p id="invoice-amount-display">Invoice total:</p>
+                <div id="card-errors"></div>
+                <div id="card-errors2"></div>
+                <label for="payment-inputs" class="payment-info-labels">Payment Info</label>
+                 <label class="save-paid-inv-title" for="card-cvc">Cardholder Name</label>
+                 <input id="user-card-name" class="payment-inputs" type="text" placeholder="Enter name on card">
+                 <label class="save-paid-inv-title" for="card-num">Card Number</label>
+                 <div id="card-num"></div>
+                 <label class="save-paid-inv-title" for="card-exp">Expiration Date</label>
+                 <div id="card-exp"></div>
+                 <label class="save-paid-inv-title" for="card-cvc">CVV</label>
+                 <div id="card-cvc"></div>
+                 <label class="save-paid-inv-title" for="save-paid-inv-opt">Save this invoice to your account?</label>
+                 <input type="checkbox" id="save-paid-inv-opt" checked>
+                <p id="send-email-info">By clicking the pay button you are authorizing FreelancerInnvoice.com to process the payment using the information provided; you confirm that the payment details entered are correct, and that you are the authorized cardholder or have permission to use this payment method.</p>
+                <button id="submit-pay-btn" class="pay-inv-btns" type="button">PAY</button>
+            </form>
+            <!-- SEE ALL INVOICES PAGE -->
+            <div id="all-inv-page-cont">
+                <button id="exit-all-inv-pg" type="submit">X</button>
+                <h2 class="page-titles">ALL INVOICES</h2>
+                <p class="send-invoices-page-info">On this page you'll see a list of all your saved invoices. You can view or delete an invoice by clicking on the invoice # to delete, or by clicking on the invoice status to view.</p>
+                <ul id="all-invs-container">
+                    <li id="all-invs-titles">
+                        <p class="invs-options">INVOICE</p>
+                        <p class="invs-options">DUE</p>
+                        <p class="invs-options">AMOUNT</p>
+                        <p class="invs-options">STATUS</p>
+                    </li>
+            <!-- status-items will be populated through javascript -->
+                </ul>
+            </div>
+            <!-- SEE INVOICES PAGE -->
+           <p class="invoices-page-info">On this page you'll see a list of all your saved invoices. Click the pay or all buttons to visit that window.</p>
+            <ul id="invs-container">
+                <li id="invs-titles">
+                    <p class="invs-options">INVOICE</p>
+                    <p class="invs-options">DUE</p>
+                    <p class="invs-options">AMOUNT</p>
+                    <p class="invs-options">STATUS</p>
+                </li>
+        <!-- status-items will be populated through javascript -->
+            </ul>
+         
+             
+            
+
+
+            <aside id="alert-container">
+                <h3 id="alert-title">ALERT</h3>
+                <p id="alert-text">This is a test alert message.</p>
+            </aside>
+        </main>
+
+        <script>
+            const stripe = Stripe('pk_test_51RwQ220okIBpa6L3huwhhQ1qkQzqbLTKUfAMEYMHI6FB6waVF89kgiecaX0xxrTwCmeg2e7qYeh5fxDRE7kWlvAR00ctlFs2Yd')
+            const elements = stripe.elements()
+            const cardNumber = elements.create('cardNumber')
+            const cardExpiry = elements.create('cardExpiry')
+            const cardCvc = elements.create('cardCvc')
+            cardNumber.mount('#card-num')
+            cardExpiry.mount('#card-exp')
+            cardCvc.mount('#card-cvc')
+            const alertTitlee = document.getElementById("alert-title");
+            const alertTextt = document.getElementById("alert-text");
+            const alertPagee = document.getElementById("alert-container");
+            const submitPayInfoBtn = document.getElementById("submit-pay-btn")
+
+            const cardNumInput = document.getElementById("card-num");
+            const cardExpInput = document.getElementById("card-exp");
+            const cardCvcInput = document.getElementById("card-cvc");
+
+
+            const messageDiv = document.getElementById("card-errors")
+            const errorDiv = document.getElementById("card-errors2")
+
+            async function submitPayment() {
+                alertPagee.style.display = 'flex'
+                alertPagee.style.height = 'fit-content'
+                alertTitlee.innerText = 'CONFIRM'
+                alertTextt.innerText = 'Confirm this payment'
+                const alertOptText1 = document.createElement('p')
+                alertOptText1.classList.add("yes-no-titles")
+                alertOptText1.innerText = 'yes'
+                const alertOptYes = document.createElement('input')
+                alertOptYes.type = 'radio'
+                alertOptYes.name = 'Pay-confirm-options'
+                alertOptYes.addEventListener('click', () => {alertOptNo.value = 'yes'})
+                const alertOptText2 = document.createElement('p')
+                alertOptText2.classList.add("yes-no-titles")
+                alertOptText2.innerText = 'no'
+                const alertOptNo = document.createElement('input')
+                alertOptNo.type = 'radio'
+                alertOptNo.name = 'Pay-confirm-options'
+                alertOptNo.addEventListener('click', () => {alertOptNo.value = 'no'})
+                const noVal = alertOptNo.value
+                const alertOptSub = document.createElement('button')
+                alertOptSub.classList.add('send-payment-btn')
+                alertOptSub.textContent = "confirm"
+                alertOptSub.addEventListener('click', () => confirmPay( 
+                    alertOptYes, 
+                    alertOptNo, 
+                    alertOptSub,
+                    alertOptText1,
+                    alertOptText2
+                ))
+                alertPagee.appendChild(alertOptText1)
+                alertPagee.appendChild(alertOptYes)
+                alertPagee.appendChild(alertOptText2)
+                alertPagee.appendChild(alertOptNo)
+                alertPagee.appendChild(alertOptSub)
+            }
+            submitPayInfoBtn.addEventListener('click', submitPayment)
+
+            const currentInv = []
+            async function confirmPay(alertOptYes, alertOptNo, alertOptSub, alertOptText1, alertOptText2) {
+                const paymentInt = {}
+                const payInvDropdown = document.getElementById("pay-inv-dropdown")
+                const payNameInput= document.getElementById("user-card-name")
+                const savePaidInv = document.getElementById("save-paid-inv-opt")
+                if (alertOptYes.checked) {
+                    if (currentInv.length > 0) {
+                        currentInv.pop()
+                        currentInv.push(payInvDropdown.innerText)
+                    } else {
+                        currentInv.push(payInvDropdown.innerText)
+                    }
+
+                    if (savePaidInv.checked) {
+                        paymentInt.stat = 'save'
+                    }
+
+                    [cardNumber, cardExpiry, cardCvc].forEach(el => {
+                        el.on('change', event => {
+                            if (event.error) {
+                            errorDiv.textContent = event.error.message
+                            } else {
+                            errorDiv.textContent = ''
+                            }
+                        })
+                    })
+
+                    paymentInt.id = payInvDropdown.innerText
+                    paymentInt.ccHolderName = payNameInput.value.trim()
+                    paymentInt.amount = payInvDropdown.value + '00'
+                    paymentInt.currency = 'USD'
+
+                    const res = await fetch('/api/create-payment-intent', {
+                        method: 'POST',
+                        headers: {'Content-Type': 'application/json'},
+                        body: JSON.stringify(paymentInt)
+                    })
+
+                    const { clientSecret } = await res.json()
+
+                    if (!res.ok) {
+                        const msg = await res.text()
+                        throw new Error("Server error: " + msg)
+                    }
+
+                    payNameInput.value =''
+
+                    alertTextt.innerText = ''
+                    alertTitlee.innerText = ''
+                    alertOptText1.remove()
+                    alertOptText2.remove()
+                    alertOptYes.remove()
+                    alertOptNo.remove()
+                    alertOptSub.remove()
+                    alertPagee.style.display = 'none'
+
+                    const { error, paymentIntent } = await stripe.confirmCardPayment(clientSecret, {
+                        payment_method: { 
+                            card: cardNumber,
+                            billing_details: {
+                                name: document.getElementById("user-card-name").value.trim(),
+                            }
+                        }
+                    })
+
+                    if (error) {
+                        messageDiv.textContent = 'error' + error.message
+                        setTimeout(() => {messageDiv.textContent = ''}, 5000)
+                        cardCvc.clear()
+                    } else if (paymentIntent.status === 'succeeded') {
+                        messageDiv.textContent = 'payment successful'
+                        setTimeout(() => {messageDiv.textContent = ''}, 3000)
+                        cardNumber.clear()
+                        cardExpiry.clear()
+                        cardCvc.clear()
+                        payInvDropdown.value = "nothing entered"
+                        amountDisplay.innerText = 'Invoice total:'
+
+                        const invNumId = currentInv[0].split(':')[1].trim()
+                        const paidInv = {}
+                        paidInv.id = Number(invNumId)
+                        paidInv.stat = 'paid'
+                        console.log(paidInv, invNumId)
+                        const req = await fetch('/api/invoices', {
+                            method: 'POST', 
+                            headers: {'Content-Type': 'application/json'},
+                            body: JSON.stringify(paidInv),
+                            credentials: 'include'
+                        })
+                    }
+                    return true
+                } else if (alertOptNo.checked) {
+                    alertTextt.innerText = ''
+                    alertTitlee.innerText = ''
+                    alertOptText1.remove()
+                    alertOptText2.remove()
+                    alertOptYes.remove()
+                    alertOptNo.remove()
+                    alertOptSub.remove()
+                    alertPagee.style.display = 'none'
+                    return false
+                }
+            }
+        </script>
+        <script src="../css/client-invoice-page.js"></script>
+    </body>
+</html>
+
+
+<!-- add the view window to view invoices from the all invoices page when the client's name in clicked -->

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/invoices-page.css">
+        <title>FreelancerInnvoice.com</title>
+    </head>
+    <body>
+        <!-- SEARCHBAR -->
+        <aside id="search-main-container">
+            <header id="searchbar-container">
+                <h3 id="web-logo">FL Innvoice.com</h3>
+                <img id="web-search-icon" class="web-icons" src="/resources/search-icon.png" alt="search-icon-image">
+                <input id="search-input" type="text" placeholder="Search">
+                <img id="web-notif-icon" class="web-icons" src="/resources/notifcation-icon.png" alt="image-of-notification-icon">
+                <h3 id="phone-logo">FLI.com</h3>
+                <nav id="icon-container">
+                    <img id="search-icon" class="nav-icons" src="/resources/search-icon.png" alt="search-icon-image">
+                    <img id="notification-icon" class="nav-icons" src="/resources/notifcation-icon.png" alt="image-of-notifcation-icon">
+                    <img id="dropdown-menu-icon" class="nav-icons" src="/resources/menu-icon.png" alt="image-of-menu-icon">
+                </nav>
+            </header>
+        </aside>
+        <!-- MOBILE NAVBAR -->
+        <nav id="mobile-navbar"> 
+                <ol id="dropdown-menu-opts-cont">
+                    <button id="side-nav-exit-btn">X</button>
+                    <li id="side-nav-logo"><h3 id="side-nav-logo">FL Innvoice.com</h3></li>
+                    <li class="phone-menu-items"><a href="dashboard">DashBoard</a><br></li>
+                    <li class="phone-menu-items"><a href="invoices">Invoices</a><br></li>
+                    <li class="phone-menu-items"><a href="clients">Clients</a></li>
+                    <li class="phone-menu-items"><a href="reports">Reports</a><br></li>
+                    <li id="mobile-settings-btn" class="phone-menu-items"><a>Settings</a><br></li>
+                    <li class="phone-menu-items"><a>Logout</a></li>
+                </ol>
+            </nav>
+        <!-- PAGE TITLE  -->
+        <h1 id="main-title">INVOICES</h1>
+        <!-- DESKTOP NAVBAR -->
+        <nav id="web-navbar">
+            <ol id="menu-options-cont">
+                <li class="web-menu-items"><a href="/dashboard">DashBoard</a><br></li>
+                <li class="web-menu-items"><a href="invoices">Invoices</a><br></li>
+                <li class="web-menu-items"><a href="clients">Clients</a></li>
+                <li class="web-menu-items"><a href="reports">Reports</a><br></li>
+                <li id="web-setting-btn" class="web-menu-items"><a href="#">Settings</a><br></li>
+            </ol>
+        </nav>
+        <!-- NOTIFACTION PAGE  -->
+        <article id="notif-page-container">
+            <button id="exit-notif-page-btn">X</button>
+            <h3 id="side-nav-logo">NOTIFICATIONS</h3>
+            <ol id="notifs-container">
+                <li class="notifs">
+                    <p class="notifs-text">This is a notification</p>
+                    <p class="notifs-date">-1 hr ago.</p>
+                </li>
+                <li class="notifs">
+                    <p class="notifs-text">This is also a notification</p>
+                    <p class="notifs-date">-30 mins ago.</p>
+                </li>
+            </ol>
+        </article>
+        <!-- SETTING PAGE -->
+        <article id="settings-page-main-cont">
+            <button id="exit-setting-btn">X</button>
+            <h2 id="settings-title">SETTINGS</h2>
+            <main id="settings-page-cont">
+                <!-- PROFILE INFO AND EDIT SECTION PLUS BUTTON -->
+                <section id="settings-profile-container">
+                    <h3 class="settings-page-sub-titles">Profile Info</h3>
+                    <p class="settings-profile-items">Client James</p>
+                    <p class="settings-profile-items">CLjames123@email.com</p>
+                    <p class="settings-profile-items">**********</p>
+                </section>
+                <button class="settings-page-btns">Edit Profile</button>
+                <!-- COMPANY INFO ANDM EDIT BUTTON SECTION -->
+                <div id="company-title-cont">
+                    <h3 class="settings-page-sub-titles">Company Info</h3>
+                </div>
+                <section id="company-info-main-cont">
+                    <!-- COMPANY LOGO -->
+                    <aside id="left-container">
+                        <p id="company-logo-default">LOGO</p>
+                    </aside>
+                    <!-- COMPANY INFO -->
+                    <aside id="right-container">
+                        <section class="company-info-containers">
+                            <p class="company-info-titles">Address</p>
+                            <address class="company-info-texts">123 hello st., brooklyn, NY, 00001</address>
+                        </section>
+                        <section class="company-info-containers">
+                            <p class="company-info-titles">Payment Details</p>
+                            <p class="company-info-texts">************1234</p>
+                        </section>
+                    </aside>
+                </section>
+                <button class="settings-page-btns">Edit Company</button>
+                <!-- INVOICE SETTING SECTION -->
+                <h3 class="settings-page-sub-titles">Invoice Settings</h3>
+                <section id="inv-settings-main-cont">
+                    <label class="currency-dropdown-labels" for="currency-dropdown">Default Currency:</label>
+                    <select id="currency-dropdown" class="inv-settings-conts">
+                        <option class="inv-sett-dropdown1-items">USD</option>
+                        <option class="inv-sett-dropdown1-items">EURO</option>
+                        <option class="inv-sett-dropdown1-items">CAD</option>
+                        <option class="inv-sett-dropdown1-items">GBP</option>
+                        <option class="inv-sett-dropdown1-items">CNY</option>
+                    </select>
+                    <label id="currency-dropdown2-label" class="currency-dropdown-labels" for="currency-dropdown2">Tax Rate:</label>
+                    <select id="currency-dropdown2" class="inv-settings-conts">
+                        <option class="inv sett-dropdown2-items">3%</option>
+                        <option class="inv sett-dropdown2-items">5%</option>
+                        <option class="inv sett-dropdown2-items">8%</option>
+                        <option class="inv sett-dropdown2-items">10%</option>
+                        <option class="inv sett-dropdown2-items">12%</option>
+                        <option class="inv sett-dropdown2-items">15%</option>
+                        <option class="inv sett-dropdown2-items">18%</option>
+                        <option class="inv sett-dropdown2-items">20%</option>
+                        <option class="inv sett-dropdown2-items">custom</option>
+                    </select>
+                </section>
+            </main>
+        </article>
+        <!-- MAIN CONTENT -->
+        <main id="main-page-container">
+            <!-- MOBILE AND WEB TOP NAVBAR -->
+            <nav id="top-nav-container">
+                <p id="new-invoice-page-title">NEW INVOICE</p>
+                <p id="new-invoice-page-title-mob">NEW</p>
+                <button id="web-send-btn" class="invoice-page-menu-btns">SEND INVOICE</button>
+                <button id="mobile-send-btn" class="invoice-page-menu-btns">SEND</button>
+                <button id="web-all-btn" class="invoice-page-menu-btns">ALL INVOICES</button>
+                <button id="mobile-all-btn" class="invoice-page-menu-btns" type="button">ALL</button>
+                <button id="draft-menu-btn" class="invoice-page-menu-btns">DRAFTS</button>
+            </nav>
+             <!-- SEND INVOICES PAGE -->
+            <div id="send-invs-page-cont">
+                <button id="exit-send-inv-pg">X</button>
+                <h2 class="page-titles">SEND INVOICES</h2>
+                <p class="send-invoices-page-info">If the 'SEND' status for a invoice shows 'Waiting' you can send that invoice to a client by clicking the 'Waiting' status.</p>
+                <ul id="send-invs-container">
+                    <li id="all-invs-titles">
+                        <p class="invs-options">INVOICE</p>
+                        <p class="invs-options">CLIENT</p>
+                        <p class="invs-options">AMOUNT</p>
+                        <p class="invs-options">SEND</p>
+                    </li>
+            <!-- status-items will be populated through javascript -->
+                </ul>
+            </div>
+            <main id="send-popup-page-cont">
+                <button id="exit-send-popup-btn">X</button>
+                <h3 class="page-sub-title">SEND TO</h3>
+                <select id="clients-dropdown">
+                    <!-- client list will be populated through javascript -->
+                     <option id="default-option">Choose Client:</option>
+                </select>
+                <button id="email-btn" class="send-to-btns">EMAIL INNVOICE</button>
+                <button id="send-btn" class="send-to-btns">SEND INNVOICE</button>
+                <p id="send-email-info">If the client has an FreeLancerInnvoice.com client Account you can send them invoices directly from this window using the 'send invoice' button. </p>
+            </main>
+            <!-- SEE ALL INVOICES PAGE -->
+            <div id="all-inv-page-cont">
+                <button id="exit-all-inv-pg" type="submit">X</button>
+                <h2 class="page-titles">ALL INVOICES</h2>
+                <p class="send-invoices-page-info">On this page you'll see a list of all your previously created invoices. You can view or delete an invoice by clicking on the invoice # to delete, or by clicking on the client's name to view.</p>
+                <ul id="all-invs-container">
+                    <li id="all-invs-titles">
+                        <p class="invs-options">INVOICE</p>
+                        <p class="invs-options">CLIENT</p>
+                        <p class="invs-options">AMOUNT</p>
+                        <p class="invs-options">STATUS</p>
+                    </li>
+            <!-- status-items will be populated through javascript -->
+                </ul>
+            </div>
+            <!-- DRAFTED INVOICES PAGE -->
+             <aside id="drafted-invs-page">
+                <button id="exit-draft-page-btn">X</button>
+                <h2 class="page-titles">DRAFTED INVOICES</h2>
+                <p id="drafts-page-info-text">Here you can view a list of all the invoices you have saved previously. To continue working on a draft, click the 'ID #' value of the invoice you want to work on. Opening a drafted invoice will remove it from the drafted invoices page so make sure to re-save every draft.</p>
+                    <ul id="draft-list-container">
+                        <li id="draft-list-titles">
+                            <p class="draft-options">ID #</p>
+                            <p class="draft-options">CLIENT</p>
+                            <p class="draft-options">DATE</p>
+                            <p class="draft-options">DELETE</p>
+                        </li>
+                <!-- status-items will be populated through javascript -->
+                    </ul>
+             </aside>
+            <!-- BOTTOM WINDOW -->
+            <form id="bottom-window-container">
+                <!-- BILL TO SECTION -->
+                <h3 class="page-sub-title">Bill To:</h3>
+                <section id="bill-to-container">
+                    <input id="name" class="bill-to-inputs" placeholder="Client Name" required>
+                    <input id="invoice-num" class="bill-to-inputs" type="number" placeholder="Invoice #">
+                    <label class="bill-to-dates" for="date">Today's Date:</label>
+                    <label class="bill-to-dates" for="due-date">Due Date:</label>
+                    <input id="date" class="bill-to-inputs" type="date" title="Today's Date" required>
+                    <input id="due-date" class="bill-to-inputs" type="date" title="Due Date" required>
+                </section>
+                <!-- INVOICE ITEM SECTION -->
+                 <!-- DISPLAY TABLE FOR NEW INVOICES -->
+                <h3 class="page-sub-title">Invoice Item:</h3>
+                <section id="inv-item-sect-container">
+                    <table id="inv-item-main-container">
+                        <tbody class="table-container">
+                            <tr class="inv-item-containers">
+                                <th class="inv-items-title">Item</th>
+                                <th class="inv-items-title">Description</th>
+                                <th class="inv-items-title">Quantity</th>
+                                <th class="inv-items-title">Price</th>
+                            </tr>
+                        </tbody>
+                        <tbody class="table-container" id="invoice-items-grid-dis">
+
+                        </tbody>
+                    </table>
+                    <!-- INPUTS AND TEXTBOXES FOR NEW INVOICES -->
+                     <section id="inv-input-container">
+                        <input id="item" class="inv-item-inputs" placeholder="Item">
+                        <input id="descript" class="inv-item-inputs" placeholder="Description">
+                        <input id="quantity" class="inv-item-inputs" placeholder="Quantity">
+                        <input id="price" class="inv-item-inputs" placeholder="Price">
+                     </section>
+                    <button class="add-inv-btn" id="add-inv-btn" type="button">Add Item</button> 
+                    <input id="note-input" placeholder="Notes">
+                </section>
+                <!-- DISCOUNTS/COUPONS/FEES SECTIONS -->
+                <section class="dis-coup-containers">
+                    <p class="dis-coup-titles">Discounts:</p>
+                    <input class="dis-coup-inputs" placeholder="Enter Code">
+                </section>
+                <section class="dis-coup-containers">
+                     <p class="dis-coup-titles">Coupons:</p>
+                    <input class="dis-coup-inputs" placeholder="Enter Coupon">
+                </section>
+                <section class="dis-coup-containers">
+                     <p class="dis-coup-titles">Fees:</p>
+                     <p id="dollar-sign">$</p>
+                    <input class="dis-coup-inputs" type="number" placeholder="Enter Amount">
+                </section>
+                <!-- CREATE THE INVOICE USING ALL THE INPUTS BUTTON -->
+                <button id="draft-inv-inputs-btn" class="invoice-btns" type="button">Save Invoice</button>
+                <button id="enter-inv-inputs-btn" class="invoice-btns" type="submit">Create Invoice</button>
+            </form>
+            
+
+
+            <aside id="alert-container">
+                <h3 id="alert-title">ALERT</h3>
+                <p id="alert-text">This is a test alert message.</p>
+            </aside>
+        </main>
+
+        <script src="../css/invoices-page.js"></script>
+    </body>
+</html>
+
+
+<!-- add the view window to view invoices from the all invoices page when the client's name in clicked -->
