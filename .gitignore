@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 .env
 =======
+=======
+>>>>>>> eb786be92ecfba5f5fbed5b27bc1b7ac1d4f4a72
 # Logs
 logs
 *.log
@@ -140,4 +143,7 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+<<<<<<< HEAD
+>>>>>>> eb786be92ecfba5f5fbed5b27bc1b7ac1d4f4a72
+=======
 >>>>>>> eb786be92ecfba5f5fbed5b27bc1b7ac1d4f4a72
