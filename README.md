@@ -54,16 +54,6 @@ Send payment reminders to clients automatically
 
 Frontend: Vanilla JavaScript, HTML5, CSS3 Backend: Node.js / Express.js Database: PostgreSQL Hosting: Render (Backend), Custom Domain (Frontend) Version Control: Git + GitHub
 
-🌐 Live Demo
-
-🔗 Visit FreelancerInnvoice.com
-
-(If not live yet, you can replace this with “Coming Soon” or localhost link.)
-
-📸 Screenshots
-
-(Add these when ready)
-
 Dashboard Invoice Builder Reports
 
 👨‍💻 Author
